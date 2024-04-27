@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(23, 23, 23);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9f3647;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#9f3647;
+}
+
+body{
+  background-color: #181419;
+  color:white; 
+   /* scrollbar-color: #9f3647  #181419; /*nuevo
+   scrollbar-width: thin;*/
+}
+
+
+
+
+/*ESTILOS HEADER PARA ESCRITORIO*/
+.header{
+  background-color:#9f3647;
+  color:#ffffff;
+  height: 10vh;
+  position:sticky;
+  top: 0;
+  z-index:10;
+  .navegacion{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left:40px;
+      margin-right: 40px;
+      padding: 1.5rem 0;
+      .anclaLogo{
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 1.2rem;
+          /*animacion hover*/
+          &:hover{
+              animation: tilt-n-move-shaking 0.25s infinite;
+          }
+      }
+
+      .listaNav{
+        display: flex;
+        align-items: center;
+          .listaItem{
+            margin-right:20px;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+              .linkNav{
+                text-decoration: none;
+                color:#ffffff;
+                font-weight: 700;
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                  /* Agregar efecto de botón presionado */
+                transition: transform 0.3s, box-shadow 0.3s;
+                  &:hover {
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 5px;
+                  }
+              }
+
+              .linkNav.iniciarSesion{
+                  background-color: #181419;
+                  color: white;
+                  flex-direction: row;
+                  border-radius: 5px;
+                  
+                  /* Agregar efecto de botón presionado */
+                   transition: transform 0.3s, box-shadow 0.3s;
+                   &:hover {
+                       background-color: #9f3647;
+                      /* transform: scale(0.95);
+                       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+                   }
+              }
+          }
+         
+      }
+  }
+ 
+}
+
+
+/*ESTILOS SECCION PRINCIPAL*/
+.seccion_principal {
+  background:linear-gradient(to right top, #0000008a, #0000008a), url('imagenes/banner_bg.jpg');
+  background-size: cover;
+  height: 400px;
+  color:white;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo_principal{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitulo_principal{
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.btn_registrarse{
+  background-color:#9f3647;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  
+  /* Agregar efecto de botón presionado */
+  transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+      background-color: #9f3647;
+      transform: scale(0.95);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+}
+
+
+/*ESTILOS SECCION BUSCADOR PRINCIPAL*/
+.buscador_principal{
+  background-color: #181419;
+  color:rgb(255, 255, 255);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_fila{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titulo_seccion{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.buscador_peliculas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.input_buscador{
+  border: 2px solid white;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 1.2rem;
+  height: 50px;
+  margin: 20px 0px;
+  outline: none;
+  padding: 0px 20px;
+  width: 500px;
+}
+
+.btn_buscar{
+  background-color:#9f3647;
+  display: inline-block;
+  color:#ffffff;
+  height: 50px;
+  margin: 20px 10px;
+  padding:0 20px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 2px solid white;
+  text-align: center;
+  
+  /* Agregar efecto de botón presionado */
+  transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+      background-color: #9f3647;
+      transform: scale(0.95);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+hr{
+  border: 1px solid #9f3647;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}

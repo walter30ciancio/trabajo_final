@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de Registro</title>
+
+</head>
+
+
+<body>
+    <section>
+        <h1>Registrarse</h1>
+        <p>Por favor ingrese los datos solicitados a continuacion:</p>
+    </section>
+
+    <section>
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Ingrese su Nombre: <input id="nombre" name="nombre" type="text" required /></label>
+                <label for="apellido">Ingrese su Apellido: <input id="apellido" name="apellido" type="text" required /></label>
+                <label for="email">Ingrese su Correo Electronico: <input id="email" name="email" type="email" required /></label>
+                <label for="fec-nac">Ingrese su Fecha de Nacimiento: <input id="fec-nac" name="fec-nac" type="date" required /></label>
+                <label for="password">Nueva Contraseña: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Cuenta</legend>
+                <label for="cuenta-personal"><input id="cuenta-personal" type="radio" name="tipo-cuenta" class="inline" checked /> Personal</label>
+                <label for="cuenta-empresa"><input id="cuenta-empresa" type="radio" name="tipo-cuenta" class="inline" /> Empresa</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Datos Opcionales</legend>
+                <label for="foto-perfil">Introduzca su foto de perfil (Opcional): <input id="foto-perfil" type="file" name="foto-perfil" /></label>
+                <label for="edad">Ingrese su edad: <input id="edad" type="number" name="edad" min="16" max="100" /></label>
+                <label for="referencia">¿Como nos conocio?
+                  <select id="referencia" name="referencia">
+                    <option value="">---selecione una---</option>
+                    <option value="1">Redes Sociales</option>
+                    <option value="2">Television, Radio, etc.</option>
+                    <option value="3">Por un Amigo</option>
+                    <option value="4">Otros</option>
+                  </select>
+                </label>
+                <label for="comentarios">Cuentenos de Usted:
+                  <textarea id="comentarios" name="comentarios" rows="3" cols="30" placeholder="Escriba un comentario..."></textarea>
+                </label>
+              </fieldset>
+
+              <label for="terminos-condiciones">
+                <input class="inline" id="terminos-condiciones" type="checkbox" required name="terminos-condiciones" /> Acepto los <a href="">terminos y condiciones</a>
+              </label>
+
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Borrar" />
+
+        </form>
+    </section>
+</body>
+
+</html>
