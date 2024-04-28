@@ -230,10 +230,15 @@ hr{
   border: 1px solid #9f3647;
   width: 80%;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* Estilos para Tendencias de hoy */
+.tendencia{
+  background-color: #181419;
+  color:rgb(255, 255, 255);
+  
+}
 
 .tendencias_hoy{
   background-color: #181419;
@@ -257,4 +262,46 @@ hr{
   margin-bottom: 40px;
 }
 
+/* Estilos para Footer*/
 
+.footer{
+  background-color:#9f3647;
+  color:#ffffff;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listaNav{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.listaItem{
+  margin-left:20px;
+}
+ 
+.linkNav{
+  text-decoration: none;
+  color:#ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.administradorPeliculas{
+  background-color: #181419;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+
+.flechaArriba{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}
