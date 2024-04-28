@@ -5,7 +5,7 @@
   font-family: 'Nunito', sans-serif;
 }
 
-@keyframes tilt-n-move-shaking {
+@keyframes mueveTitulo {
   0% { transform: translate(0, 0) rotate(0deg); }
   25% { transform: translate(5px, 5px) rotate(5deg); }
   50% { transform: translate(0, 0) rotate(0eg); }
@@ -65,7 +65,7 @@ body{
           font-size: 1.2rem;
           /*animacion hover*/
           &:hover{
-              animation: tilt-n-move-shaking 0.25s infinite;
+              animation: mueveTitulo 0.25s infinite;
           }
       }
 
@@ -142,6 +142,7 @@ body{
 
 .btn_registrarse{
   background-color:#9f3647;
+  border: 1px solid white;
   color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -179,7 +180,9 @@ body{
 .titulo_seccion{
   font-size: 2.5rem;
   font-weight: 700;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .buscador_peliculas{
@@ -229,3 +232,28 @@ hr{
   margin: 0 auto;
   margin-top: 40px;
 }
+
+/* Estilos para Tendencias de hoy */
+
+.tendencias_hoy{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cards_hoy{
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-bottom: 20px;
+}
+
+.btn_normal{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
