@@ -97,6 +97,8 @@ body{
                   color: white;
                   flex-direction: row;
                   border-radius: 5px;
+                  margin-left: 5px;
+                  margin-right: 5px;
                   
                   /* Agregar efecto de botón presionado */
                    transition: transform 0.3s, box-shadow 0.3s;
@@ -230,8 +232,9 @@ hr{
   border: 1px solid #9f3647;
   width: 80%;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: 40px;
 }
+
 
 /* Estilos para Tendencias de hoy */
 .tendencia{
@@ -267,7 +270,7 @@ hr{
 .footer{
   background-color:#9f3647;
   color:#ffffff;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,4 +307,83 @@ hr{
   right: 20px;
   color: white;
   cursor: pointer;
+}
+
+
+/*
+Iniciar Sesion
+*/
+.bodyInciciarSesion{
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-image: url('imagenes/banner_bg.jpg');
+}
+
+form{
+  background-size: cover;
+  background:linear-gradient(to right top, #000000e5, #000000fd);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: top, center;
+  align-items: center;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  height: 80vh;
+  margin-top: 0%;
+  padding-top: 5vh;
+ }
+  
+ .primerField {
+  padding: 5vh;
+  padding-top: 0px;
+  margin-top: 0px;
+ }
+
+ .segundoField{
+  padding: 5vh;
+  padding-top: 0px;
+  margin-top: 0px;
+ }
+
+.primerLabel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(236, 14, 14);
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 25px;
+  padding: 0px 20px;
+  background-color: #000000;
+}
+
+.primerBoton{
+  display: flex;
+  justify-content: top center;
+  align-items: top center;
+  margin: 25px;
+  padding: 0px 20px;
+}
+
+.segundoBoton{
+  background-color: transparent;
+  color: #8b8686;
+  border: none;
+  &:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+#personajes{
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
