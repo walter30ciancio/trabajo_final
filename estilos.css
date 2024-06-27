@@ -1,6 +1,10 @@
+
+/*
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+*/
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
@@ -181,7 +185,7 @@ body{
 
 .titulo_seccion{
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 700px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -228,12 +232,7 @@ body{
     }
 }
 
-hr{
-  border: 1px solid #9f3647;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
-}
+
 
 
 /* Estilos para Tendencias de hoy */
@@ -253,11 +252,15 @@ hr{
 }
 
 .cards_hoy{
-  width: 200px;
-  height: 300px;
+  width: 180px;
+  height: 270px;
   border-radius: 20px;
   margin: 30px;
   margin-bottom: 20px;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
 }
 
 .btn_normal{
@@ -300,7 +303,6 @@ hr{
   border-radius: 5px;
 }
 
-
 .flechaArriba{
   position: fixed;
   bottom: 20px;
@@ -330,9 +332,9 @@ form{
   align-items: center;
   text-align: center;
   color:rgb(255, 255, 255);
-  height: 80vh;
+  
   margin-top: 0%;
-  padding-top: 5vh;
+  
  }
   
  .primerField {
@@ -355,9 +357,10 @@ form{
   border-radius: 25px;
   color: #ffffff;
   font-size: 1.2rem;
-  margin: 25px;
+  margin: 20px;
   padding: 0px 20px;
   background-color: #000000;
+  width: 350px;
 }
 
 .primerBoton{
@@ -373,7 +376,7 @@ form{
   color: #8b8686;
   border: none;
   &:hover {
-    transform: scale(0.95);
+    transform: scale(1.2);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   }
 }
@@ -386,4 +389,45 @@ form{
   align-items: center;
   text-align: center;
   
+}
+
+/* Pagina Registrarse */
+.bodyRegistrarse{
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url('imagenes/banner_bg.jpg');
+}
+
+.fieldRegistrar{
+  background-color: #181419;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px solid black;
+}
+
+.titulo_form{
+  
+  background:linear-gradient(to right top, #000000e5, #000000fd);
+  font-size: 2.5rem;
+  padding-top: 5vh;
+  
+  text-align: center;
+}
+
+.formRegistro{
+  background-size: cover;
+  background:linear-gradient(to right top, #000000e5, #000000fd);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  height: cover;
+  margin-top: 0%;
+  padding-top: 3vh;
 }
